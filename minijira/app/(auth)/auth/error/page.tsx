@@ -16,8 +16,8 @@ export default function AuthErrorPage() {
           <path d="M39.3646 22.3934C38.3359 23.4221 36.9407 24 35.4859 24C33.0506 24 30.9859 22.413 30.2698 20.2167L25.7988 24.6877C27.8386 27.8819 31.4149 30 35.4859 30C38.532 30 41.4533 28.7899 43.6072 26.636L62.6366 7.6066C63.6653 6.57791 65.0605 6 66.5153 6C69.5448 6 72.0006 8.45584 72.0006 11.4853C72.0006 12.9401 71.4227 14.3353 70.394 15.364L63.3646 22.3934C62.3359 23.4221 60.9407 24 59.4859 24C57.0504 24 54.9856 22.4127 54.2696 20.2162L49.7986 24.6873C51.8383 27.8818 55.4147 30 59.4859 30C62.532 30 65.4533 28.7899 67.6072 26.636L74.6366 19.6066C76.7905 17.4527 78.0006 14.5314 78.0006 11.4853C78.0006 5.14214 72.8585 0 66.5153 0C63.4692 0 60.5479 1.21005 58.394 3.36396L39.3646 22.3934Z" fill="#6b7280"/>
       </svg>
       <h1 className="text-2xl font-jetbrains-mono uppercase mt-2 text-white">Authentication Error</h1>
-      <p className="mt-2 font-sans text-gray-600">There was an issue during authentication. Please try again.</p>
-      <Button onClick={handleNavigation} variant="secondary" className="mt-4 font-sans">
+      <p className="font-sans text-gray-600">There was an issue during authentication. Please try again.</p>
+      <Button onClick={handleNavigation} variant="secondary" className="mt-4 font-sans ">
         Go Back to Login
       </Button>
     </div>

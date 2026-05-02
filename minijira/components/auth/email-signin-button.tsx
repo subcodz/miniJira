@@ -2,7 +2,7 @@ import { Button } from "../ui/button";
 
 export function EmailSignInButton() {
     return(
-        <Button variant="clean_dark" className="w-full mt-2">
+        <Button variant="clean_dark" className="w-full mt-2 hover:shadow-lg hover:shadow-gray-500/50 ">
           <svg viewBox="0 0 24 24"
             className="h-5 w-5 fill-blue-500 "
             xmlns="http://www.w3.org/2000/svg">

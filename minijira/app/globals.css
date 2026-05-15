@@ -51,8 +51,8 @@
 }
 
 :root {
-  --background: oklch(19.241% 0.00161 16.547);
-  --foreground: oklch(0.145 0 0);
+  --background: oklch(17.764% 0.00002 271.152);
+  --foreground: oklch(0% 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
@@ -131,4 +131,13 @@
     @apply font-jetbrains-mono;  }
 
  
+}
+/* globals.css */
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }

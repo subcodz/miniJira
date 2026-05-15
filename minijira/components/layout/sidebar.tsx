@@ -3,7 +3,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { signOut } from "@/modules/auth/actions"
-import { Bell, ChevronLeft, ChevronRight, CircleDot, FolderKanban, LayoutDashboard, Settings, LogOut, Calendar } from "lucide-react"
+import { Bell, ChevronLeft, ChevronRight, CircleDot, FolderKanban, LayoutDashboard, Settings, LogOut, Calendar, PanelRight, PanelLeft } from "lucide-react"
 import { Button } from "../ui/button"
 
 const navItems = [
@@ -34,7 +34,7 @@ export function Sidebar({user}:{user:{email: string; full_name?: string}}) {
           onClick={() => setCollapsed(!collapsed)}
           className="ml-auto flex h-6 w-6 items-center justify-center rounded-md border border-gray-700 text-gray-400 hover:bg-secondary hover:text-black"
         >
-          {collapsed ? <ChevronRight size={12} /> : <ChevronLeft size={12} />}
+          {collapsed ? <PanelLeft size={12} /> : <PanelRight size={12} />}
         </button>
       </div>
 
@@ -47,7 +47,7 @@ export function Sidebar({user}:{user:{email: string; full_name?: string}}) {
               key={href}
               href={href}
               className={`flex  items-center gap-2.5 rounded-md px-2 py-1 text-sm transition-colors
-                ${active ? 'bg-gray-100 text-primary' : 'text-gray-500 hover:bg-gray-700/30 hover:text-gray-300'}
+                ${active ? 'bg-gray-100 text-primary' : 'text-neutral-400 hover:bg-blue-700/25 hover:text-neutral-300'}
                 ${collapsed && !isHovered ? 'justify-center' : ''}`}
             >
               <Icon size={16} className="shrink-0" />
@@ -60,7 +60,7 @@ export function Sidebar({user}:{user:{email: string; full_name?: string}}) {
       {/* Bottom — user + sign out */}
       <div className="border-t border-gray-700 p-2">
           <div
-            className={`flex w-full items-center gap-2 rounded-md px-2 py-2 text-sm text-gray-400 hover:bg-white hover:text-black
+            className={`flex w-full items-center gap-2 rounded-md px-2 py-2 text-sm text-neutral-400 hover:bg-white hover:text-black
               ${collapsed && !isHovered ? 'justify-center' : ''}`}
           >
             <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-green-100 text-xs font-medium text-green-800">

@@ -1,10 +1,10 @@
 import  { redirect } from 'next/navigation'
-import { getCurrentUserr } from '@/lib/auth'
+import { getCurrentUser } from '@/lib/auth'
 import { Sidebar } from '@/components/layout/sidebar'
 import { Topbar } from '@/components/layout/topbar'
 
 export default async function AppLayout({ children }: { children: React.ReactNode }) {
-  const user = await getCurrentUserr()
+  const user = await getCurrentUser()
   if (!user) redirect('/')
 
   return (
@@ -12,7 +12,7 @@ export default async function AppLayout({ children }: { children: React.ReactNod
       <Sidebar user={{email: user.email!, full_name: user.user_metadata?.full_name }} />
       <div className="flex flex-1 flex-col overflow-hidden">
         <Topbar />
-        <main className="flex-1 overflow-auto p-6">
+        <main className="flex-1 overflow-auto p-6 flex justify-center scrollbar-none">
           {children}
         </main>
       </div>

@@ -22,11 +22,11 @@ export async function proxy(request: NextRequest) {
 
   // Redirect unauthenticated users away from protected routes
   if (!user && request.nextUrl.pathname.startsWith('/dashboard')) {
-    return NextResponse.redirect(new URL('/login', request.url))
+    return NextResponse.redirect(new URL('/', request.url))
   }
 
   // Redirect authenticated users away from login page
-  if (user && request.nextUrl.pathname === '/login') {
+  if (user && request.nextUrl.pathname === '/') {
     return NextResponse.redirect(new URL('/dashboard', request.url))
   }
 
@@ -34,5 +34,5 @@ export async function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/dashboard/:path*', '/login'],
+  matcher: ['/dashboard/:path*', '/'],
 }

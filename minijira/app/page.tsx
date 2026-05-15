@@ -3,7 +3,7 @@ import { GoogleSignInButton } from "@/components/auth/google-signin-button";
 
 export default function Home() {
   return (
-    <div className="min-h-screen w-full font-sans selection:bg-green-500 selection:text-black  dark:bg-black relative">
+    <div className="min-h-screen w-full font-sans selection:bg-green-500 text-neutral-400 selection:text-black  dark:bg-black relative">
 
       {/* ── Fixed corner labels ── */}
       <div className="fixed top-5 left-4 xs:top-6 xs:left-6 sm:top-8 sm:left-8 z-50 flex items-center gap-2">
@@ -11,12 +11,12 @@ export default function Home() {
           <path d="M18.5147 0C15.4686 0 12.5473 1.21005 10.3934 3.36396L3.36396 10.3934C1.21005 12.5473 0 15.4686 0 18.5147C0 24.8579 5.14214 30 11.4853 30C14.5314 30 17.4527 28.7899 19.6066 26.636L24.4689 21.7737L38.636 7.6066C39.6647 6.57791 41.0599 6 42.5147 6C44.9503 6 47.0152 7.58741 47.7311 9.78407L52.2022 5.31296C50.1625 2.11834 46.586 0 42.5147 0C39.4686 0 36.5473 1.21005 34.3934 3.36396L15.364 22.3934C14.3353 23.4221 12.9401 24 11.4853 24C8.45584 24 6 21.5442 6 18.5147C6 17.0599 6.57791 15.6647 7.6066 14.636L14.636 7.6066C15.6647 6.57791 17.0599 6 18.5147 6C20.9504 6 23.0152 7.58748 23.7311 9.78421L28.2023 5.31307C26.1626 2.1184 22.5861 0 18.5147 0Z" fill="#6b7280"/>
           <path d="M39.3646 22.3934C38.3359 23.4221 36.9407 24 35.4859 24C33.0506 24 30.9859 22.413 30.2698 20.2167L25.7988 24.6877C27.8386 27.8819 31.4149 30 35.4859 30C38.532 30 41.4533 28.7899 43.6072 26.636L62.6366 7.6066C63.6653 6.57791 65.0605 6 66.5153 6C69.5448 6 72.0006 8.45584 72.0006 11.4853C72.0006 12.9401 71.4227 14.3353 70.394 15.364L63.3646 22.3934C62.3359 23.4221 60.9407 24 59.4859 24C57.0504 24 54.9856 22.4127 54.2696 20.2162L49.7986 24.6873C51.8383 27.8818 55.4147 30 59.4859 30C62.532 30 65.4533 28.7899 67.6072 26.636L74.6366 19.6066C76.7905 17.4527 78.0006 14.5314 78.0006 11.4853C78.0006 5.14214 72.8585 0 66.5153 0C63.4692 0 60.5479 1.21005 58.394 3.36396L39.3646 22.3934Z" fill="#6b7280"/>
         </svg>
-        <span className="font-jetbrains-mono uppercase text-[10px] sm:text-[11px] text-gray-500 tracking-widest">
+        <span className="font-jetbrains-mono uppercase text-[10px] sm:text-[11px] tracking-widest">
           MiniJira
         </span>
       </div>
 
-      <div className="fixed top-5 right-4 xs:top-6 xs:right-6 sm:top-8 sm:right-8 z-50 font-jetbrains-mono uppercase text-[9px] sm:text-[11px] text-gray-500 leading-4 text-right">
+      <div className="fixed top-5 right-4 xs:top-6 xs:right-6 sm:top-8 sm:right-8 z-50 font-jetbrains-mono uppercase text-[9px] sm:text-[11px] leading-4 text-right">
         workflow simplified <span className="text-red-500/70">▰</span>
       </div>
 
@@ -34,7 +34,7 @@ export default function Home() {
           flex-shrink-0
         ">
           {/* Marquee text — desktop only */}
-          <div className="hidden sm:block absolute top-8 left-8 w-[260px] font-jetbrains-mono uppercase text-[9px] text-gray-500 leading-3">
+          <div className="hidden sm:block absolute top-8 left-8 w-[260px] font-jetbrains-mono uppercase text-[9px] leading-3">
             automate assign plan track design meet organize set present inform calculate provide listen understand analyze learn grow find <span className="text-red-900/70">▰</span>
           </div>
 
@@ -61,7 +61,7 @@ export default function Home() {
             <h2 className="text-white font-mono text-[32px] xs:text-[36px] sm:text-5xl text-left leading-none mb-3 sm:mb-4">
               MiniJira
             </h2>
-            <p className="text-gray-500 text-[13px] xs:text-[14px] leading-4 mb-8 sm:mb-10 text-left">
+            <p className=" text-[13px] xs:text-[14px] leading-4 mb-8 sm:mb-10 text-left">
               Your lightweight project management tool. The all-in-one place to manage,
               plan, and track all your projects with all your people.
             </p>
